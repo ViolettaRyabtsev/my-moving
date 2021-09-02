@@ -1,0 +1,27 @@
+.text-piano {
+  width: 80%;
+  height: 1070px;
+  background-color: rgb(247, 241, 242);
+  opacity: 0.9;
+  position: absolute;
+  top: 300px;
+  display: block;
+  margin: auto;
+  margin-left: 140px;
+}
+.text-piano h4 {
+  text-emphasis: center;
+  padding-top: 20px;
+}
+
+.back-home {
+  color: black;
+}
+
+.text-piano img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  border-radius: 30px;
+  border-style: solid;
+}

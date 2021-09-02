@@ -1,0 +1,37 @@
+.navigatin-list li {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* .head-bar img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  padding-left: 100px;
+} */
+
+.navigatin-list {
+  display: flex;
+  vertical-align: middle;
+  width: 900px;
+  padding-left: 200px;
+}
+
+.head-bar li {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.href {
+  color: black;
+}
+
+.header {
+  padding-top: 25px;
+}

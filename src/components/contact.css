@@ -1,0 +1,24 @@
+.contact-box {
+  display: grid;
+  grid-auto-rows: minmax(80px, auto);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.message-box {
+  grid-column: 2;
+  grid-row: 1 / 4;
+}
+
+.contact-box .submit-button {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  grid-row: 4;
+  grid-column: 2;
+  margin-left: 450px;
+  height: 40px;
+}

@@ -1,0 +1,10 @@
+.items {
+  display: table;
+  margin: 0 auto;
+}
+
+.item-list il {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: center; /* added */
+}

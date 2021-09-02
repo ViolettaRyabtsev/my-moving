@@ -1,0 +1,17 @@
+.main-text {
+  width: 80%;
+  height: 635px;
+  background-color: rgb(247, 241, 242);
+  opacity: 0.9;
+  position: absolute;
+  top: 300px;
+  display: block;
+  margin: auto;
+  margin-left: 140px;
+}
+.main-text h4 {
+  text-align: center;
+}
+.back-home {
+  color: black;
+}

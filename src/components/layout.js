@@ -1,48 +1,39 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
+//import { Global, css } from "@emotion/core"
+import NavBar from "./NavBar.js"
+import logo from "../images/logo-viking.png"
+import "././NavBar.js/NavBar.css"
 import "./layout.css"
-
+import photo from "../images/moving-out-boxes.jpg"
+import Helmet from "react-helmet"
+import useSiteMetadata from "../hooks/use-setemetadata"
+import Quote from "././NavBar.js/button.js"
+import { GiVikingHelmet } from "react-icons/gi"
+import Footer from "./footer"
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  const { title, description } = useSiteMetadata()
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+      <Helmet>
+        <html lang="en" />
+        <title>hello violet</title>
+        <meta name={title} content={description} />
+      </Helmet>
+
+      <div class="layout-page">
+        <div class="flex-head">
+          <Quote class="quote" />
+          <NavBar class="navigation" />
+          <img src={logo} />
+        </div>
+        <div>
+          <img class="main-photo" src={photo}></img>
+          <main class="children">{children}</main>
+          <Footer />
+        </div>
       </div>
     </>
   )

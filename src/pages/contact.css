@@ -1,0 +1,17 @@
+.contact {
+  position: absolute;
+  width: 80%;
+  height: 635px;
+  background-color: rgb(247, 241, 242);
+  opacity: 0.9;
+  position: "absolute";
+  top: 300px;
+  display: block;
+  margin: auto;
+  margin-left: 140px;
+  outline: 0;
+}
+
+.back-home {
+  color: black;
+}
